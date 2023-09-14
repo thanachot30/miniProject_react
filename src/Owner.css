@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page_Owner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
