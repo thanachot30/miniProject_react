@@ -19,7 +19,7 @@ function User() {
 
     return (
       <div>
-        <table>
+        <table id='customers'>
             <thead>
               <th>Name</th>
               <th>LastName</th>

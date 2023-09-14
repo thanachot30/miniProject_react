@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page_home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.btn_center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#btnUser{
+    width: 150px;
+}
+#btnAdmin{
+    width: 150px;
+}

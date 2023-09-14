@@ -1,9 +1,7 @@
 import { useState,useEffect} from 'react'
 import axios from "axios";
 function Admin() {
-
-  
-
+  const [error,setError] = useState();
   const [members, setMembers] = useState([]);
   const [name,setName] = useState();
   const [lastname,setLastname] = useState();
@@ -20,8 +18,19 @@ function Admin() {
     getData();
   }, [reload]);
 
+  // function validateValue(inputvalue){
+  //   const regex = /^[A-Za-z]{1}[0-9]{4}$/;  //you will let This will let you enter 1 letter (a-z and A-Z) and 4 numbers (0-9) and 
+  //   const found = paragraph.match(regex);
+  //   if(!found){
+  //     console.log("validate Error")
+  //     setError("you will let This will let you enter 1 letter (a-z and A-Z) and 4 numbers (0-9) and")
+  //   }
+  //   return 
+  // }
+
   const createData = async (name,lastname,position)=>{
     console.log("hi create data");
+
     const requestData = {
       name:name,
       lastname:lastname,

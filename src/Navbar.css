@@ -1,0 +1,15 @@
+.Nav_manu{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    text-align: end;
+    background-color: #D0D0D0;
+}
+
+#Home_link{
+    margin: 10px;
+}
+
+#Owner_link{
+    margin: 10px;
+}

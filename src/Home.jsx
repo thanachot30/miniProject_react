@@ -12,13 +12,11 @@ function Home() {
 
     const checkAuthen =()=>{
         if(authen == "normal"){
-            setPage(<Normal />);
+            // setPage(<Normal />);
             settital("React-Assessment")
         }else if(authen == "user"){
-            setPage(<User />);
             settital("Home-User Sector")
         }else if(authen == "admin"){
-            setPage(<Admin />);
             settital("Home-Adnmin Sector")
         }
     }
@@ -33,23 +31,24 @@ function Home() {
 
     function handleAdminhome(){
         setAuthen("admin");
+        setPage(<Admin />);
         // console.log(authen);
     }
 
     return (
         <Layout>
-            <div>
-                <div>
-                <h1>Generation Thailand</h1>
-                <h1>{tital}</h1>
+            <div className='page_home'>
+                <div className='title'>
+                    <h1>Generation Thailand</h1>
+                    <h1>{tital}</h1>
                 </div>
                 
-                <div> 
-                    <button onClick={handleUserhome}>User Home Sector</button>
-                    <button onClick={handleAdminhome}>Admin Hoem Sector</button>
+                <div className='btn_center'> 
+                    <button onClick={handleUserhome} id='btnUser'>User Home Sector</button>
+                    <button onClick={handleAdminhome} id='btnAdmin'>Admin Hoem Sector</button>
                 </div>
 
-                <div>
+                <div className='page'>
                     {page}    
                 </div>
                 
